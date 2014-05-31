@@ -3,7 +3,7 @@
 //  IFBase
 //
 //  Created by yangxh on 13-1-25.
-//  Copyright (c) 2013年 杭州引力网络技术有限公司. All rights reserved.
+//  Copyright (c) hzTuogu. All rights reserved.
 //
 
 #import "IFBase.h"

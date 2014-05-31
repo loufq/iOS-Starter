@@ -14,6 +14,7 @@ pod 'JVFloatLabeledTextField', '~> 0.0'
 
 pod 'NSDate+TimeAgo', '~> 1.0'
 pod 'NSUserDefaults+Utility', '~> 0.1'
+pod 'NSObject-ObjectMap', '~> 2.3'
 pod 'NTMonthYearPicker', '~> 1.0'
 
 pod 'M13Checkbox', '~> 1.0'
