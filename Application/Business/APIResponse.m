@@ -13,6 +13,8 @@
 
 +(id)create:(NSDictionary*)dict{
     APIResponse* res =[APIResponse new];
+    res.code = [[dict valueForKey:@"code"] intValue];
+    res.data =[dict valueForKey:@"data"];
     return  res;
 }
 

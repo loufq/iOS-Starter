@@ -10,4 +10,7 @@
 
 @interface LoginVC : BaseVC
 
++(BOOL)isLogin;
+
+
 @end

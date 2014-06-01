@@ -10,10 +10,8 @@
 
 @interface APIResponse : NSObject
 
-@property(assign) int PageCount;
-@property(assign) int PageSize;
-@property(assign) int RecordCount;
-@property(retain)NSArray* Entities;
+@property(assign) int code;
+@property(retain) id data;
 
 +(id)create:(NSDictionary*)dict;
 

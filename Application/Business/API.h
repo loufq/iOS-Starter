@@ -8,14 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+#define BaseUrl() (@"http://localhost:3000/")
+@class APIResponse;
+
 @interface API : NSObject
 
 + (AFHTTPRequestOperation *)login:(NSString*)loginID
                               pwd:(NSString*)pwd
-                          success:(void (^)(id obj))success
+                          success:(void (^)(APIResponse* obj))success
                          failture:(void (^)(NSError *error))failture;
 
-+(AFHTTPRequestOperation *)logOutWithsuccess:(void (^)(id obj))success
++(AFHTTPRequestOperation *)logOutWithsuccess:(void (^)(APIResponse* obj))success
                                     failture:(void (^)(NSError *error))failture;
 
 

@@ -8,20 +8,16 @@
 
 #import "API.h"
 #import "ReqManager.h"
-
-#define BaseUrl() (@"http://fhylml.qiniudn.com/")
-#define ApiUrl(name) ([NSString stringWithFormat:@"http://fhylml.qiniudn.com/%@",name])
+#import "APIResponse.h"
 
 @implementation API
 
 + (AFHTTPRequestOperation *)login:(NSString*)loginID
                               pwd:(NSString*)pwd
-                          success:(void (^)(id obj))success
+                          success:(void (^)(APIResponse* res))success
                          failture:(void (^)(NSError *error))failture{
-    
     NSDictionary* params = @{@"logincode":loginID,@"userpass":pwd};
-    
-    AFHTTPRequestOperation* oper =[[ReqManager sharedManager] postWithPath:@"ParkingApi/api/security" signParameters:nil parameters:params success:^(id obj) {
+    AFHTTPRequestOperation* oper =[[ReqManager sharedManager] postWithPath:@"api/login" signParameters:nil parameters:params success:^(APIResponse* obj) {
         SAFE_BLOCK_CALL(success,obj);
     } failture:^(NSError *error) {
         SAFE_BLOCK_CALL(failture,error);
@@ -29,10 +25,10 @@
     return oper;
 }
 
-+(AFHTTPRequestOperation *)logOutWithsuccess:(void (^)(id obj))success
++(AFHTTPRequestOperation *)logOutWithsuccess:(void (^)(APIResponse* res))success
                                     failture:(void (^)(NSError *error))failture{
     return  nil;
-
+    
 }
 
 @end
