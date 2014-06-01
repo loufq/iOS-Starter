@@ -11,6 +11,7 @@
 @interface APIResponse : NSObject
 
 @property(assign) int code;
+@property(retain) NSString* msg;
 @property(retain) id data;
 
 +(id)create:(NSDictionary*)dict;

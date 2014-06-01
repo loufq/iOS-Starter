@@ -8,6 +8,7 @@
 
 #import "LoginVC.h"
 #import "API.h"
+#import "APIResponse.h"
 
 @interface LoginVC ()<UITextFieldDelegate>{
     UIView* vWrapper;
@@ -21,9 +22,13 @@
 @implementation LoginVC
 #define kMessage_APP_LoginInfo @"kMessage_APP_LoginInfo"
 +(BOOL)isLogin{
-    return true;
+    BOOL isLogin =  [NSUserDefaults objectForKey:kMessage_APP_LoginInfo] != nil;
+    return isLogin;
 }
-
++(void)logout{
+    [NSUserDefaults removeObjectForKey:kMessage_APP_LoginInfo];
+    [NSUserDefaults synchronize];
+}
 - (void)viewWillLayoutSubviews{
     
 }
@@ -165,17 +170,20 @@
         [tfPassword becomeFirstResponder];
         return;
     }
+    
     [tfUserName resignFirstResponder];
     [tfPassword resignFirstResponder];
     btnLogin.enabled = NO;
+    
     MBProgressHUD* hud =[MBProgressHUD showHUDAddedTo:vWrapper animated:YES];
     [API login:userName pwd:pwd success:^(id obj) {
-        
-        
-        
+        [NSUserDefaults setObject:obj forKey:kMessage_APP_LoginInfo];
+        [NSUserDefaults synchronize];
         [self dismissViewControllerAnimated:YES completion:nil];
         self.normalBlock(obj);
     } failture:^(NSError *error) {
+        [NSUserDefaults removeObjectForKey:kMessage_APP_LoginInfo];
+        [NSUserDefaults synchronize];
         btnLogin.enabled = YES;
         [hud hide:YES];
         UIAlertView* av =[UIAlertView bk_alertViewWithTitle:@"提醒" message:error.localizedDescription];

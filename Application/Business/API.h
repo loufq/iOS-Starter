@@ -15,10 +15,10 @@
 
 + (AFHTTPRequestOperation *)login:(NSString*)loginID
                               pwd:(NSString*)pwd
-                          success:(void (^)(APIResponse* obj))success
+                          success:(void (^)(id data))success
                          failture:(void (^)(NSError *error))failture;
 
-+(AFHTTPRequestOperation *)logOutWithsuccess:(void (^)(APIResponse* obj))success
++(AFHTTPRequestOperation *)logOutWithsuccess:(void (^)(id data))success
                                     failture:(void (^)(NSError *error))failture;
 
 

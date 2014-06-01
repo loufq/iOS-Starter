@@ -11,6 +11,7 @@
 @interface LoginVC : BaseVC
 
 +(BOOL)isLogin;
++(void)logout;
 
 
 @end
