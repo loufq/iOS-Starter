@@ -68,6 +68,7 @@
 		19E898B2193A12B000093A3B /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E89899193A12B000093A3B /* UIView+Common.m */; };
 		19E898B3193A12B000093A3B /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E8989B193A12B000093A3B /* UIView+Size.m */; };
 		19E898B9193AB1DE00093A3B /* FRDLivelyButtonExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E898B8193AB1DE00093A3B /* FRDLivelyButtonExt.m */; };
+		19E898C2193ABBE700093A3B /* UIBarButtonItemExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E898C1193ABBE700093A3B /* UIBarButtonItemExt.m */; };
 		C6B9BEE1E8D14986ABBCA65D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB623AF85BBB4CFFB8E6ED02 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -201,6 +202,9 @@
 		19E8989B193A12B000093A3B /* UIView+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Size.m"; sourceTree = "<group>"; };
 		19E898B7193AB1DE00093A3B /* FRDLivelyButtonExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDLivelyButtonExt.h; sourceTree = "<group>"; };
 		19E898B8193AB1DE00093A3B /* FRDLivelyButtonExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDLivelyButtonExt.m; sourceTree = "<group>"; };
+		19E898C0193ABBE700093A3B /* UIBarButtonItemExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBarButtonItemExt.h; sourceTree = "<group>"; };
+		19E898C1193ABBE700093A3B /* UIBarButtonItemExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBarButtonItemExt.m; sourceTree = "<group>"; };
+		19E898C3193ABBEE00093A3B /* BlockDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockDefines.h; sourceTree = "<group>"; };
 		EB623AF85BBB4CFFB8E6ED02 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F093D2A4ED8042E2A718BE36 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -417,6 +421,7 @@
 		19E89840193A09B300093A3B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				19E898C3193ABBEE00093A3B /* BlockDefines.h */,
 				19E8984E193A0AC400093A3B /* SimpleSelectVC.h */,
 				19E8984F193A0AC400093A3B /* SimpleSelectVC.m */,
 				19E89851193A0ACD00093A3B /* MyPaginator.h */,
@@ -425,6 +430,8 @@
 				19E89855193A0AEA00093A3B /* MonthYearPickerVC.m */,
 				19E898B7193AB1DE00093A3B /* FRDLivelyButtonExt.h */,
 				19E898B8193AB1DE00093A3B /* FRDLivelyButtonExt.m */,
+				19E898C0193ABBE700093A3B /* UIBarButtonItemExt.h */,
+				19E898C1193ABBE700093A3B /* UIBarButtonItemExt.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -710,6 +717,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19E898A7193A12B000093A3B /* NSString+Validate.m in Sources */,
+				19E898C2193ABBE700093A3B /* UIBarButtonItemExt.m in Sources */,
 				19E898AC193A12B000093A3B /* UIImageView_CreateHelpler.m in Sources */,
 				19E89859193A0B3B00093A3B /* RootVC.m in Sources */,
 				19E898A2193A12B000093A3B /* NSError+Helper.m in Sources */,
