@@ -10,7 +10,6 @@
 
 @interface BaseTableVC :BaseVC <UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic, assign) BOOL pullToRefresh;
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataList;
 @property (nonatomic, assign) int numbersOfColumn;

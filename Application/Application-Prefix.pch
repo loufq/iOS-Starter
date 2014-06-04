@@ -62,10 +62,9 @@
 
 #import "BlockDefines.h"
 #import "Categories_UICreateHelper.h"
-
-
 #import "UtilitiesHeader.h"
 
+#import "BaseTableViewCell.h"
 #import "UIBarButtonItemExt.h"
 #import "FRDLivelyButtonExt.h"
 

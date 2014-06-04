@@ -8,6 +8,8 @@
 
 #import "RootVC.h"
 #import "LoginVC.h"
+#import "SettingVC.h"
+
 @interface RootVC (){
 }
 @end
@@ -38,12 +40,18 @@
 {
     [super viewDidLoad];
     if ([LoginVC isLogin]) [self afterLoginLoad];
+    self.title = @"首页";
 }
 
 -(void)afterLoginLoad{
     MBProgressHUD* hud =[MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [hud setLabelText:@"获取菜单信息..."];
+    [hud setLabelText:@"获取信息..."];
     [hud hide:YES];
+    UIBarButtonItem* btn =[FRDLivelyButtonExt createBarItemWithStyle:kFRDLivelyButtonStyleHamburger tapped:^(id obj) {
+        SettingVC* vc =[SettingVC create];
+        pushVC(vc);
+    }];
+    self.navigationItem.rightBarButtonItem = btn;
     
 }
 

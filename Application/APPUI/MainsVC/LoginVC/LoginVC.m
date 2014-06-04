@@ -22,6 +22,7 @@
 @implementation LoginVC
 #define kMessage_APP_LoginInfo @"kMessage_APP_LoginInfo"
 +(BOOL)isLogin{
+    return YES;
     BOOL isLogin =  [NSUserDefaults objectForKey:kMessage_APP_LoginInfo] != nil;
     return isLogin;
 }

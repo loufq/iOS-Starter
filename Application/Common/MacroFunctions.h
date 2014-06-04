@@ -61,6 +61,7 @@
 //navigation oper
 #define pushVCChangeNavBar(_vc) ([self.navigationController pushViewControllerWithNavigationControllerTransition:_vc])
 #define pushVC(_vc) ([self.navigationController pushViewController:_vc animated:YES])
+#define pushVCClass(_class) ([self.navigationController pushViewController:[[_class class] create] animated:YES])
 #define pushVCNoAnimated(_vc) ([self.navigationController pushViewController:_vc animated:NO])
 #define popVC() ([self.navigationController popViewControllerAnimated:YES])
 //vi

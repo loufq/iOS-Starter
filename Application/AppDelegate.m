@@ -7,14 +7,18 @@
 //
 
 #import "AppDelegate.h"
-
+#import "RootVC.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+    RootVC* vc =[RootVC create];
+    UINavigationController* nvc =[[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nvc;
     [self.window makeKeyAndVisible];
+
     return YES;
 }
 

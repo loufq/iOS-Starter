@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1943B8B7193E918400EE8D8E /* DemoBButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1943B8B6193E918400EE8D8E /* DemoBButtonVC.m */; };
+		1943B8BB193E91AB00EE8D8E /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1943B8BA193E91AB00EE8D8E /* SettingVC.m */; };
 		19E897771939F7DA00093A3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E897761939F7DA00093A3B /* Foundation.framework */; };
 		19E897791939F7DA00093A3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E897781939F7DA00093A3B /* CoreGraphics.framework */; };
 		19E8977B1939F7DA00093A3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E8977A1939F7DA00093A3B /* UIKit.framework */; };
@@ -83,6 +85,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1943B8B5193E918400EE8D8E /* DemoBButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBButtonVC.h; sourceTree = "<group>"; };
+		1943B8B6193E918400EE8D8E /* DemoBButtonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBButtonVC.m; sourceTree = "<group>"; };
+		1943B8B9193E91AB00EE8D8E /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		1943B8BA193E91AB00EE8D8E /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 		19E897731939F7DA00093A3B /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E897761939F7DA00093A3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19E897781939F7DA00093A3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -234,6 +240,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1943B8B4193E916600EE8D8E /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				1943B8B5193E918400EE8D8E /* DemoBButtonVC.h */,
+				1943B8B6193E918400EE8D8E /* DemoBButtonVC.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		1943B8B8193E919C00EE8D8E /* SettingVC */ = {
+			isa = PBXGroup;
+			children = (
+				1943B8B9193E91AB00EE8D8E /* SettingVC.h */,
+				1943B8BA193E91AB00EE8D8E /* SettingVC.m */,
+			);
+			path = SettingVC;
+			sourceTree = "<group>";
+		};
 		19E8976A1939F7DA00093A3B = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +336,7 @@
 		19E897AD1939FAA900093A3B /* APPUI */ = {
 			isa = PBXGroup;
 			children = (
+				1943B8B4193E916600EE8D8E /* Demo */,
 				19E8983F193A09B300093A3B /* Base */,
 				19E89840193A09B300093A3B /* Common */,
 				19E89841193A09B300093A3B /* MainsVC */,
@@ -439,6 +464,7 @@
 		19E89841193A09B300093A3B /* MainsVC */ = {
 			isa = PBXGroup;
 			children = (
+				1943B8B8193E919C00EE8D8E /* SettingVC */,
 				19E89857193A0B3B00093A3B /* RootVC.h */,
 				19E89858193A0B3B00093A3B /* RootVC.m */,
 				19E8985A193A0B5300093A3B /* LoginVC */,
@@ -718,6 +744,7 @@
 			files = (
 				19E898A7193A12B000093A3B /* NSString+Validate.m in Sources */,
 				19E898C2193ABBE700093A3B /* UIBarButtonItemExt.m in Sources */,
+				1943B8B7193E918400EE8D8E /* DemoBButtonVC.m in Sources */,
 				19E898AC193A12B000093A3B /* UIImageView_CreateHelpler.m in Sources */,
 				19E89859193A0B3B00093A3B /* RootVC.m in Sources */,
 				19E898A2193A12B000093A3B /* NSError+Helper.m in Sources */,
@@ -764,6 +791,7 @@
 				19E8984D193A0A8800093A3B /* BaseTableViewCell.m in Sources */,
 				19E897871939F7DA00093A3B /* AppDelegate.m in Sources */,
 				19E8989E193A12B000093A3B /* NSDate+CSCompare.m in Sources */,
+				1943B8BB193E91AB00EE8D8E /* SettingVC.m in Sources */,
 				19E897831939F7DA00093A3B /* main.m in Sources */,
 				19E89834193A058100093A3B /* CommonHelper.m in Sources */,
 				19E897CE193A017500093A3B /* IFBase.m in Sources */,

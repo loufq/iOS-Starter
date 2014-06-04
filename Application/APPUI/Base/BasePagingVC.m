@@ -25,9 +25,8 @@
     [super viewDidLoad];
     if (self.numbersOfColumn<=1) {self.numbersOfColumn = 1;}
     self.tableView =[[UITableView alloc] initWithFrame:self.view.bounds];
-    self.tableView.top = 60;
-    self.tableView.width =  [self isLandscape]?1024:768;
-    self.tableView.height =  ([self isLandscape]?768:1024)-self.tableView.top;
+    self.tableView.width = self.view.width;
+    self.tableView.height = self.view.height;
     
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
     self.tableView.backgroundColor = [UIColor whiteColor];
