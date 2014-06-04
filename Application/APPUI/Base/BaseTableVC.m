@@ -34,7 +34,7 @@
     self.tableView.delegate=self;
     self.tableView.dataSource =self;
     [self.view addSubview:self.tableView];
-
+    
 }
 
 
@@ -58,7 +58,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    int iCount = [self.dataList count];
+    NSUInteger iCount = [self.dataList count];
     int allCol =self.numbersOfColumn;
     float f = iCount*1.0/allCol;
     float f2 = ceil(f);
@@ -66,11 +66,11 @@
     return iCount;
 }
 
--(int)numberOfSectionsInTableView:(UITableView *)tableView{
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return [self sectionCount];
 }
 
--(float)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     if ([self headerViewClass]) {
         return [self headerViewHeight:section];
     }
@@ -82,11 +82,11 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
--(float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return [self cellHeight:indexPath];
 }
 
-- (int)sectionCount{
+- (NSUInteger)sectionCount{
     return 1;
 }
 
@@ -94,14 +94,14 @@
     return nil;
 }
 
-- (float)headerViewHeight:(int)aSection{
-    return 0;
+- (CGFloat)headerViewHeight:(NSInteger)aSection{
+    return 0.0f;
 }
 
 - (Class)cellClass{
     return [BaseTableViewCell class];
 }
-- (float)cellHeight:(NSIndexPath*)aIndexPath{
+- (CGFloat)cellHeight:(NSIndexPath*)aIndexPath{
     return 44.0f;
 }
 

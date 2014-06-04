@@ -18,9 +18,9 @@
 -(Class)cellClass;
 
 -(Class)headerViewClass;
-- (float)headerViewHeight:(int)aSection;
 
-- (float)cellHeight:(NSIndexPath*)aIndexPath;
-- (int)sectionCount;
+- (CGFloat)headerViewHeight:(NSInteger)aSection;
+- (CGFloat)cellHeight:(NSIndexPath*)aIndexPath;
+- (NSUInteger)sectionCount;
 
 @end

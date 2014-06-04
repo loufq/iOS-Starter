@@ -15,12 +15,18 @@
 
 }@end
 @implementation DemoBButtonVCCell
+
+-(void)initLayout{
+    [super initLayout];
+    
+}
 -(void)updateAtIndex:(NSInteger)aIndex withInfo:(id)aEntity{
+    [[self.contentView viewWithTag:1000] removeFromSuperview];
     self.textLabel.text= [aEntity valueForKey:@"name"];
     BButton* btn = ( BButton*)[aEntity valueForKey:@"btn"];
+    btn.tag = 1000;
     btn.left = 270;
     [self.contentView addSubview:btn];
-    
 }
 @end
 //////////////////////////////////////////////////////////////
@@ -39,7 +45,7 @@
     NSArray* strings = [self getTitles];
     for ( int direction = FAIconGlass; direction <= FAIconShareSign; ++direction)
     {
-        BButton* btn =[BButton awesomeButtonWithOnlyIcon:direction type:BButtonTypeDefault style:BButtonStyleBootstrapV3];
+        BButton* btn =[BButton awesomeButtonWithOnlyIcon:direction type:BButtonTypeDefault style:2];
         btn.frame = CGRectMake(0, 0, 44, 44);
         NSDictionary* dict = @{@"name": strings[direction],@"btn":btn};
         [list addObject:dict];
