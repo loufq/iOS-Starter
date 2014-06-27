@@ -13,7 +13,7 @@
 #define DOCUMENTS_DIR ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject])
 //app 存储应用自带的打包资源目录 
 +(NSString*)navDocumentPath{
-    return [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"DocumentsLocal"];
+    return [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Documents"];
 }
     //app 存储内容的目录，区别系统的document目录，考虑iClound备份的情况
 + (NSString *)documentPath{ 
