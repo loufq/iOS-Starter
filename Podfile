@@ -1,5 +1,5 @@
 platform:ios, '7.0'
-
+pod 'AAActivityAction', '~> 1.0'
 pod 'ALAssetsLibrary-CustomPhotoAlbum', '~> 1.1'
 
 pod 'BButton', '~> 3.2.3'
@@ -18,6 +18,7 @@ pod 'NSObject-ObjectMap', '~> 2.3'
 pod 'NTMonthYearPicker', '~> 1.0'
 
 pod 'M13Checkbox', '~> 1.0'
+pod 'MagicalRecord', '~> 2.2'
 pod 'MBProgressHUD', '~> 0.8'
 pod 'MagicalRecord', '~> 2.2'
 
@@ -33,6 +34,7 @@ pod 'SSToolkit', '~> 2.0'
 pod 'SVPullToRefresh', '~> 0.4'
 
 pod 'WYPopoverController', '~> 0.2'
+pod 'QR-Code-Encoder-for-Objective-C', '~> 1.0'
 
 
 

@@ -14,4 +14,7 @@
 
 +(id)createWithSysStyle:(UIBarButtonSystemItem)style tapped:(NormalBlock)block;
 
++(id)createWithTitle:(NSString*)title tapped:(NormalBlock)block;
+
+
 @end

@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190A3644193EA4F6005B2C37 /* UIAlertView+SCMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 190A3643193EA4F6005B2C37 /* UIAlertView+SCMethods.m */; };
 		1943B8B7193E918400EE8D8E /* DemoBButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1943B8B6193E918400EE8D8E /* DemoBButtonVC.m */; };
 		1943B8BB193E91AB00EE8D8E /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1943B8BA193E91AB00EE8D8E /* SettingVC.m */; };
+		1989A7B2195D42ED004C2FFF /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1989A7B1195D42ED004C2FFF /* ScanViewController.m */; };
 		19E897771939F7DA00093A3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E897761939F7DA00093A3B /* Foundation.framework */; };
 		19E897791939F7DA00093A3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E897781939F7DA00093A3B /* CoreGraphics.framework */; };
 		19E8977B1939F7DA00093A3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E8977A1939F7DA00093A3B /* UIKit.framework */; };
@@ -85,10 +87,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		190A3642193EA4F6005B2C37 /* UIAlertView+SCMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+SCMethods.h"; sourceTree = "<group>"; };
+		190A3643193EA4F6005B2C37 /* UIAlertView+SCMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+SCMethods.m"; sourceTree = "<group>"; };
 		1943B8B5193E918400EE8D8E /* DemoBButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBButtonVC.h; sourceTree = "<group>"; };
 		1943B8B6193E918400EE8D8E /* DemoBButtonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBButtonVC.m; sourceTree = "<group>"; };
 		1943B8B9193E91AB00EE8D8E /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
 		1943B8BA193E91AB00EE8D8E /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		1989A7B0195D42ED004C2FFF /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		1989A7B1195D42ED004C2FFF /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		19E897731939F7DA00093A3B /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E897761939F7DA00093A3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19E897781939F7DA00093A3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -240,6 +246,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		190A3641193EA4F6005B2C37 /* UIAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				190A3642193EA4F6005B2C37 /* UIAlertView+SCMethods.h */,
+				190A3643193EA4F6005B2C37 /* UIAlertView+SCMethods.m */,
+			);
+			path = UIAlertView;
+			sourceTree = "<group>";
+		};
 		1943B8B4193E916600EE8D8E /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,6 +461,8 @@
 		19E89840193A09B300093A3B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1989A7B0195D42ED004C2FFF /* ScanViewController.h */,
+				1989A7B1195D42ED004C2FFF /* ScanViewController.m */,
 				19E898C3193ABBEE00093A3B /* BlockDefines.h */,
 				19E8984E193A0AC400093A3B /* SimpleSelectVC.h */,
 				19E8984F193A0AC400093A3B /* SimpleSelectVC.m */,
@@ -484,6 +501,7 @@
 		19E89860193A12B000093A3B /* Catalogs */ = {
 			isa = PBXGroup;
 			children = (
+				190A3641193EA4F6005B2C37 /* UIAlertView */,
 				19E89861193A12B000093A3B /* NSBundle */,
 				19E89864193A12B000093A3B /* NSDate */,
 				19E8986F193A12B000093A3B /* NSError */,
@@ -758,6 +776,7 @@
 				19E897C01939FEB900093A3B /* API.m in Sources */,
 				19E898A0193A12B000093A3B /* NSDate+Helper.m in Sources */,
 				19E89835193A058100093A3B /* NSArray+JSON.m in Sources */,
+				1989A7B2195D42ED004C2FFF /* ScanViewController.m in Sources */,
 				19E898A8193A12B000093A3B /* NSStringHelper.m in Sources */,
 				19E898A5193A12B000093A3B /* NSString+TH.m in Sources */,
 				19E89850193A0AC400093A3B /* SimpleSelectVC.m in Sources */,
@@ -770,6 +789,7 @@
 				19E89844193A0A6E00093A3B /* BaseVC.m in Sources */,
 				19E89828193A04BE00093A3B /* ImageSourceHelper.m in Sources */,
 				19E898A6193A12B000093A3B /* NSString+TH_UserDefaults.m in Sources */,
+				190A3644193EA4F6005B2C37 /* UIAlertView+SCMethods.m in Sources */,
 				19E8984B193A0A8800093A3B /* BaseTableVC.m in Sources */,
 				19E8989D193A12B000093A3B /* NSData+MBBase64.m in Sources */,
 				19E898B1193A12B000093A3B /* MBProgressHUD+Toast.m in Sources */,
