@@ -11,6 +11,7 @@
 		1943B8B7193E918400EE8D8E /* DemoBButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1943B8B6193E918400EE8D8E /* DemoBButtonVC.m */; };
 		1943B8BB193E91AB00EE8D8E /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1943B8BA193E91AB00EE8D8E /* SettingVC.m */; };
 		1989A7B2195D42ED004C2FFF /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1989A7B1195D42ED004C2FFF /* ScanViewController.m */; };
+		1989A7C6195D5CF0004C2FFF /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 1989A7C5195D5CF0004C2FFF /* UIImage+Color.m */; };
 		19E897771939F7DA00093A3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E897761939F7DA00093A3B /* Foundation.framework */; };
 		19E897791939F7DA00093A3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E897781939F7DA00093A3B /* CoreGraphics.framework */; };
 		19E8977B1939F7DA00093A3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E8977A1939F7DA00093A3B /* UIKit.framework */; };
@@ -95,6 +96,9 @@
 		1943B8BA193E91AB00EE8D8E /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 		1989A7B0195D42ED004C2FFF /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
 		1989A7B1195D42ED004C2FFF /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		1989A7C4195D5CF0004C2FFF /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		1989A7C5195D5CF0004C2FFF /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		1989A7C7195D5D05004C2FFF /* Catalogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalogs.h; sourceTree = "<group>"; };
 		19E897731939F7DA00093A3B /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E897761939F7DA00093A3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19E897781939F7DA00093A3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -501,6 +505,7 @@
 		19E89860193A12B000093A3B /* Catalogs */ = {
 			isa = PBXGroup;
 			children = (
+				1989A7C7195D5D05004C2FFF /* Catalogs.h */,
 				190A3641193EA4F6005B2C37 /* UIAlertView */,
 				19E89861193A12B000093A3B /* NSBundle */,
 				19E89864193A12B000093A3B /* NSDate */,
@@ -611,6 +616,8 @@
 		19E89893193A12B000093A3B /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				1989A7C4195D5CF0004C2FFF /* UIImage+Color.h */,
+				1989A7C5195D5CF0004C2FFF /* UIImage+Color.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -797,6 +804,7 @@
 				19E897B71939FC8E00093A3B /* ResManager.m in Sources */,
 				19E898AE193A12B000093A3B /* UITextField_CreateHelper.m in Sources */,
 				19E8983E193A08C100093A3B /* IUser.m in Sources */,
+				1989A7C6195D5CF0004C2FFF /* UIImage+Color.m in Sources */,
 				19E898A9193A12B000093A3B /* JVFloatLabeledTextField+UICreateHelper.m in Sources */,
 				19E8984C193A0A8800093A3B /* BasePagingVC.m in Sources */,
 				19E898AD193A12B000093A3B /* UILabel_CreateHelper.m in Sources */,

@@ -16,6 +16,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     RootVC* vc =[RootVC create];
     UINavigationController* nvc =[[UINavigationController alloc] initWithRootViewController:vc];
+    UIImage* image = [UIImage imageFromColor:MF_ColorFromRGB(0, 139, 202)];
+    [nvc.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
     self.window.rootViewController = nvc;
     [self.window makeKeyAndVisible];
 

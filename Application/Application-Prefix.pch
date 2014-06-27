@@ -33,6 +33,7 @@
 #import "JVFloatLabeledTextView.h"
 
 #import "MBProgressHUD.h"
+#import "Catalogs.h"
 
 #import "NSUserDefaults+Utility.h"
 
